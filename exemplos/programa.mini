@@ -1,0 +1,18 @@
+// Programa de exemplo em MiniPT
+funcao fatorial(n) {
+    var resultado = 1;
+    enquanto (n > 1) {
+        resultado = resultado * n;
+        n = n - 1;
+    }
+    retorne resultado;
+}
+
+var x = 5;
+var pi = 3.14;
+var nome = "Ana";
+se (x >= 3 e nao falso) {
+    imprima(fatorial(x));
+} senao {
+    imprima("pequeno");
+}

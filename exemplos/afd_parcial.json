@@ -1,0 +1,13 @@
+{
+  "descricao": "AFD parcial (sem estado de erro) para a linguagem a(b|c)*d, com estados redundantes",
+  "alfabeto": ["a", "b", "c", "d"],
+  "estados": ["s0", "s1", "s2", "s3", "s4", "s5"],
+  "inicial": "s0",
+  "finais": ["s3", "s5"],
+  "transicoes": {
+    "s0": {"a": "s1"},
+    "s1": {"b": "s2", "c": "s4", "d": "s3"},
+    "s2": {"b": "s2", "c": "s4", "d": "s5"},
+    "s4": {"b": "s2", "c": "s4", "d": "s3"}
+  }
+}

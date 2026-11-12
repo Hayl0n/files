@@ -1,0 +1,4 @@
+var a = 10 @ 2;
+var s = "texto sem fechar;
+var t = 4.;
+imprima(a # 3);

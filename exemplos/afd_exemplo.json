@@ -1,0 +1,18 @@
+{
+  "descricao": "AFD classico com estados equivalentes (A~E, B~H) e inalcancavel (D, I)",
+  "alfabeto": ["0", "1"],
+  "estados": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+  "inicial": "A",
+  "finais": ["C"],
+  "transicoes": {
+    "A": {"0": "B", "1": "F"},
+    "B": {"0": "G", "1": "C"},
+    "C": {"0": "A", "1": "C"},
+    "D": {"0": "C", "1": "G"},
+    "E": {"0": "H", "1": "F"},
+    "F": {"0": "C", "1": "G"},
+    "G": {"0": "G", "1": "E"},
+    "H": {"0": "G", "1": "C"},
+    "I": {"0": "A", "1": "D"}
+  }
+}
